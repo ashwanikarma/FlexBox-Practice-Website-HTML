@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Flex Practice</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+        
+        .headercontainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: red;
+            font-weight: bold;
+            padding: 1opx;
+        }
+
+        .footercontainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: green;
+            font-weight: bold;
+            padding: 1opx;
+        }
+
+        .maincontainer{
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .maincontentitem{
+            text-align: left;
+            background: skyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+            /* border: 2px; */
+        }
+
+        .sidebaritemleft{
+            background: gold;
+        }
+
+        .sidebaritemright {
+            background: pink;
+        }
+
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 0 px solid black;
+        }
+        .maincontentitem {
+            flex: 3 0px;
+        }
+
+        .sidebaritemleft {
+            order: 1;
+        }
+
+        .sidebaritemright {
+            order: 3;
+        }
+
+        .maincontentitem {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <header class="headercontainer">
+        <h1> Header about US </h1>
+    </header>    
+    <div class="maincontainer">
+        <section class="maincontentitem">
+            <article>
+                <h2>
+                    Ashwani Karma
+                </h2>
+                <p>
+                    My name is Ashwani Karma. I was brought up and born in kirandul, chhattisgarh. I have completed my Bachelor in Civil Engineering from bhilai institute of technology in the year 2019 with 66.56% aggregate. I have done my schooling from kendriya vidyalaya. Also i got second rank in my class 11th academics. My hobbies are playing games and listening to EDM bass boosted music.
+                </p>
+            </article>
+            <article>
+                <h2>Ariana Grande</h2>
+                <p>Ariana Grande was born Ariana Grande-Butera on June 26, 1993 in Boca Raton, Florida to Joan Grande, a chief executive officer for Hose-McCann Communications & Edward Butera, a graphic designer, photographer, artist and Ibi Designs Inc. owner/founder. She starred in the 2008 musical, 13 before becoming a household name through her roles on Nickelodeon.</p>
+            </article>
+            <article>
+                <h2>Selena Gomez</h2>
+                <p>Actress and singer Selena Gomez was born on July 22, 1992 in Grand Prairie, Texas. She is the daughter of Mandy Teefey and Ricardo Gomez. Her mother is of part Italian ancestry, and her father is of Mexican descent. She was named after Tejano singer Selena, who died in 1995</p>
+            </article>
+        </section>
+        <sideBar class="sideBarItem sidebaritemleft">
+            <div class="center">
+                <p>left side bar</p>
+            </div>
+        </sideBar>
+        <sideBar class="sideBarItem sidebaritemright">
+            <div class="center">
+                <p>right side bar</p>
+            </div>
+        </sideBar>
+    </div>
+    <footer class="footercontainer">Footer hai ye baba</footer>
+</body>
+</html>
